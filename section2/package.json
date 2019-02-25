@@ -15,5 +15,10 @@
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
     "webpack-dev-server": "^3.2.1"
+  },
+  "scripts": {
+    "compile:sass": "node-sass src/sass/style.scss dist/main.css",
+    "start": "webpack-dev-server",
+    "build": "NODE_ENV=production webpack"
   }
 }

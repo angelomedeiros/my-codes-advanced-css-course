@@ -1,9 +1,6 @@
-$light-green: #7ed56f;
-$light-green-80: #7ed56fcc;
-$medium-green: #55c57a;
-$medium-green-80: #55c57acc;
-$dark-green: #28b485;
-$dark-green-80: #28b485cc;
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
 
 * {
   margin: 0;
@@ -31,8 +28,8 @@ body {
   height: 95vh;
   background-image: linear-gradient(
       to right bottom,
-      $light-green-80,
-      $dark-green-80
+      transparentize($color-primary-light, 0.2),
+      transparentize($color-primary-dark, 0.2)
     ),
     url("../img/hero.jpg");
   background-size: cover;
